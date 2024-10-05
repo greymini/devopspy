@@ -9,7 +9,7 @@ port = 12345
 
 
 #Connect to the server
-server_socket.connect((host, port))
+server_socket.bind((host, port))
 
 #Start listening to incoming connections
 server_socket.listen(5)
