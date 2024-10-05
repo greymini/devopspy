@@ -17,7 +17,7 @@ server_socket.listen(5)
 print(f"Server listening on {host}:{port}....")
 
 #Accept the connection and get the client socket
-client_socket, client_address = server.socket.accept()
+client_socket, client_address = server_socket.accept()
 print(f'Connection established with {client_address}')
 
 #Receive data from the client
